@@ -33,10 +33,11 @@ $ vim +PluginInstall +qall
 ```
 
 
-### SSH setting:
+### Screen setting:
 
-When connecting to linux host through ssh, we should set `/etc/ssh_config` or `~/.ssh/config`:
+When using screen, sometimes we need set `~/.screenrc` to enable 256 colors:
 ```
-Host *
-    SendEnv TERM
+termcapinfo screen 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
 ```
+
+And make sure `TERM=screen`.
