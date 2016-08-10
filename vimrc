@@ -105,10 +105,8 @@ syntax on
 syntax enable
 set t_Co=256
 set background=light
-if OSX()
-    let g:solarized_termcolors=256
-    let g:solarized_visibility="normal"
-endif
+let g:solarized_termcolors=256
+let g:solarized_visibility="normal"
 let g:solarized_termtrans=1
 let g:solarized_contrast="normal"
 colorscheme solarized

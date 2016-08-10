@@ -31,3 +31,12 @@ If we need YouCompleteMe, we need Vim 7.3.598 with Python 2 or Python 3 support.
 ```
 $ vim +PluginInstall +qall
 ```
+
+
+### SSH setting:
+
+When connecting to linux host through ssh, we should set `/etc/ssh_config` or `~/.ssh/config`:
+```
+Host *
+    SendEnv TERM
+```
