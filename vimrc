@@ -19,9 +19,11 @@
     Plugin 'altercation/vim-colors-solarized'
     Plugin 'octol/vim-cpp-enhanced-highlight'
     Plugin 'vim-scripts/TaskList.vim'
-    Plugin 'Valloric/YouCompleteMe'
     Plugin 'klen/python-mode'
     Plugin 'tpope/vim-markdown'
+    Plugin 'Valloric/YouCompleteMe'
+    Plugin 'rdnetto/YCM-Generator'
+    Plugin 'soramugi/auto-ctags.vim'
 
     " All of your Plugins must be added before the following line
     call vundle#end()            " required
@@ -91,9 +93,15 @@ let g:go_play_open_browser = 0
 let g:go_get_update = 0
 
 " YCM
+let g:ycm_confirm_extra_conf=0
 let g:ycm_global_ycm_extra_conf = "~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py"
+let g:ycm_collect_identifiers_from_tag_files = 1
 let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+nmap gc :YcmCompleter GoToDefinitionElseDeclaration<CR>
+
+" auto-ctags.vim
+let g:auto_ctags = 1
 
 
 " Syntax and Indent
@@ -178,3 +186,15 @@ autocmd BufEnter mutt-* 0r ~/mail/files/signature
 "set updatetime=500
 set incsearch
 set backspace=indent,eol,start
+
+
+" Jump to the last position when reopening a file
+if has("autocmd")
+    " In text files, always limit the width of text to 78 characters
+    " autocmd BufRead *.txt set tw=78
+    " When editing a file, always jump to the last cursor position
+    autocmd BufReadPost *
+    \ if line("'\"") > 0 && line ("'\"") <= line("$") |
+    \   exe "normal! g'\"" |
+    \ endif
+endif
