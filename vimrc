@@ -23,7 +23,6 @@
     Plugin 'tpope/vim-markdown'
     Plugin 'Valloric/YouCompleteMe'
     Plugin 'rdnetto/YCM-Generator'
-    Plugin 'soramugi/auto-ctags.vim'
 
     " All of your Plugins must be added before the following line
     call vundle#end()            " required
@@ -99,9 +98,6 @@ let g:ycm_collect_identifiers_from_tag_files = 1
 let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
 nmap gc :YcmCompleter GoToDefinitionElseDeclaration<CR>
-
-" auto-ctags.vim
-let g:auto_ctags = 1
 
 
 " Syntax and Indent
