@@ -21,6 +21,10 @@
     Plugin 'vim-scripts/TaskList.vim'
     Plugin 'klen/python-mode'
     Plugin 'tpope/vim-markdown'
+    Plugin 'Lokaltog/vim-powerline'
+    Plugin 'kien/ctrlp.vim'
+    Plugin 'SirVer/ultisnips'
+    Plugin 'honza/vim-snippets'
     Plugin 'Valloric/YouCompleteMe'
     Plugin 'rdnetto/YCM-Generator'
 
@@ -90,6 +94,14 @@ let g:go_fmt_fail_silently = 1
 let g:go_fmt_autosave = 0
 let g:go_play_open_browser = 0
 let g:go_get_update = 0
+
+" CtrlP
+let g:ctrlp_map = '<C-m>'
+
+" UltiSnips
+let g:UltiSnipsExpandTrigger="<tab>"
+"let g:UltiSnipsJumpForwardTrigger="<c-[>"
+"let g:UltiSnipsJumpBackwardTrigger="<c-o>"
 
 " YCM
 let g:ycm_confirm_extra_conf=0

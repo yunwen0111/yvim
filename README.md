@@ -26,10 +26,11 @@ $ ./link.sh
 If we need YouCompleteMe, we need Vim 7.3.598 with Python 2 or Python 3 support.
 
 
-### Install Plugins:
+### Install Plugins and YCM:
 
 ```
 $ vim +PluginInstall +qall
+$ cd ~/.vim/bundle/YouCompleteMe  &&  ./install.py --clang-completer
 ```
 
 
