@@ -25,6 +25,10 @@
     Plugin 'kien/ctrlp.vim'
     Plugin 'SirVer/ultisnips'
     Plugin 'honza/vim-snippets'
+    "Plugin 'jiangmiao/auto-pairs'
+    Plugin 'tpope/vim-surround'
+    Plugin 'ntpeters/vim-better-whitespace'
+    Plugin 'scrooloose/nerdcommenter'
     Plugin 'Valloric/YouCompleteMe'
     Plugin 'rdnetto/YCM-Generator'
 
@@ -102,6 +106,12 @@ let g:ctrlp_map = '<C-m>'
 let g:UltiSnipsExpandTrigger="<tab>"
 "let g:UltiSnipsJumpForwardTrigger="<c-[>"
 "let g:UltiSnipsJumpBackwardTrigger="<c-o>"
+
+" vim-better-whitespace
+nmap ws :ToggleWhitespace<CR>
+
+" Nerdcommenter
+let g:mapleader = ","
 
 " YCM
 let g:ycm_confirm_extra_conf=0
