@@ -14,6 +14,7 @@
 
     Plugin 'majutsushi/tagbar'
     Plugin 'scrooloose/nerdtree'
+    Plugin 'jistr/vim-nerdtree-tabs'
     Plugin 'fatih/vim-go'
     Plugin 'fholgado/minibufexpl.vim'
     Plugin 'altercation/vim-colors-solarized'
@@ -21,6 +22,8 @@
     Plugin 'vim-scripts/TaskList.vim'
     Plugin 'klen/python-mode'
     Plugin 'tpope/vim-markdown'
+    Plugin 'xolox/vim-misc'  " for vim-lua-ftplugin
+    Plugin 'xolox/vim-lua-ftplugin'
     Plugin 'Lokaltog/vim-powerline'
     Plugin 'kien/ctrlp.vim'
     Plugin 'SirVer/ultisnips'
@@ -100,7 +103,7 @@ let g:go_play_open_browser = 0
 let g:go_get_update = 0
 
 " CtrlP
-let g:ctrlp_map = '<C-m>'
+let g:ctrlp_map = '<C-i>'
 
 " UltiSnips
 let g:UltiSnipsExpandTrigger="<tab>"
