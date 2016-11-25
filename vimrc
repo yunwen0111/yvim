@@ -34,6 +34,7 @@
     Plugin 'scrooloose/nerdcommenter'
     Plugin 'Valloric/YouCompleteMe'
     Plugin 'rdnetto/YCM-Generator'
+    Plugin 'terryma/vim-multiple-cursors'  " Sublime text style multiple selections
 
     " All of your Plugins must be added before the following line
     call vundle#end()            " required
