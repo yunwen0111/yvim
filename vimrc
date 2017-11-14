@@ -173,6 +173,7 @@ nmap k gk
 
 
 " encoding
+set encoding=utf-8
 let &termencoding=&encoding
 set fileencodings=utf-8,gbk,gb2312,gb18030,big5,cp1256,cp1253,cp10006,cp20423,cp28597,cp1255,cp1256
 
