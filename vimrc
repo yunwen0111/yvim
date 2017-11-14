@@ -18,6 +18,7 @@
     Plugin 'fatih/vim-go'
     Plugin 'fholgado/minibufexpl.vim'
     Plugin 'altercation/vim-colors-solarized'
+    Plugin 'hukl/Smyck-Color-Scheme'
     Plugin 'octol/vim-cpp-enhanced-highlight'
     Plugin 'vim-scripts/TaskList.vim'
     Plugin 'klen/python-mode'
@@ -35,6 +36,7 @@
     Plugin 'Valloric/YouCompleteMe'
     Plugin 'rdnetto/YCM-Generator'
     Plugin 'terryma/vim-multiple-cursors'  " Sublime text style multiple selections
+    Plugin 'vim-scripts/DrawIt'
 
     " All of your Plugins must be added before the following line
     call vundle#end()            " required
@@ -111,9 +113,6 @@ let g:UltiSnipsExpandTrigger="<tab>"
 "let g:UltiSnipsJumpForwardTrigger="<c-[>"
 "let g:UltiSnipsJumpBackwardTrigger="<c-o>"
 
-" vim-better-whitespace
-nmap ws :ToggleWhitespace<CR>
-
 " Nerdcommenter
 let g:mapleader = ","
 
@@ -138,21 +137,30 @@ syntax on
 " Color
 syntax enable
 set t_Co=256
-set background=light
+set background=dark
 let g:solarized_termcolors=256
 let g:solarized_visibility="normal"
 let g:solarized_termtrans=1
 let g:solarized_contrast="normal"
 colorscheme solarized
+"colorscheme smyck
 
-set colorcolumn=80
+set colorcolumn=78
+hi ColorColumn ctermbg=187 ctermfg=NONE guibg=NONE guifg=NONE
 
 set cursorline  " must after 'Syntax and Indent'
 hi CursorLine ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
-hi CursorLineNr ctermbg=187 ctermfg=red guibg=NONE guifg=NONE
+
+" line number color: light
+"hi LineNr ctermbg=187 ctermfg=darkgrey guibg=NONE guifg=NONE
+"hi CursorLineNr ctermbg=187 ctermfg=red guibg=NONE guifg=NONE
+
+" line number color: dark
+hi LineNr ctermbg=012 ctermfg=darkgrey guibg=NONE guifg=NONE
+hi CursorLineNr ctermbg=012 ctermfg=187 guibg=NONE guifg=NONE
+
 "set cursorcolumn
 "hi CursorColumn cterm=NONE ctermbg=lightgray ctermfg=black guibg=NONE guifg=NONE
-"hi LineNr ctermbg=NONE ctermfg=darkgrey guibg=NONE guifg=NONE
 "hi Pmenu ctermbg=cyan ctermfg=darkgrey guibg=darkblue guifg=white
 
 
@@ -206,6 +214,11 @@ nmap <C-_>2 :cs find d <C-R>=expand("<cword>")<CR><CR>
 " For mutt
 "set tw=99999999
 autocmd BufEnter mutt-* 0r ~/mail/files/signature
+
+
+" vim-better-whitespace
+nmap ws :ToggleWhitespace<CR>
+hi ExtraWhitespace ctermbg=grey
 
 
 " Other
