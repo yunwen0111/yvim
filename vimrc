@@ -163,6 +163,9 @@ hi CursorLineNr ctermbg=012 ctermfg=187 guibg=NONE guifg=NONE
 "hi CursorColumn cterm=NONE ctermbg=lightgray ctermfg=black guibg=NONE guifg=NONE
 "hi Pmenu ctermbg=cyan ctermfg=darkgrey guibg=darkblue guifg=white
 
+" comment color
+hi Comment ctermfg=61
+
 
 " Key map
 nmap wm :TagbarToggle<cr>
