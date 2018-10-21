@@ -17,6 +17,7 @@
     Plugin 'jistr/vim-nerdtree-tabs'
     Plugin 'fatih/vim-go'
     Plugin 'fholgado/minibufexpl.vim'
+    Plugin 'guns/xterm-color-table.vim'
     Plugin 'altercation/vim-colors-solarized'
     Plugin 'hukl/Smyck-Color-Scheme'
     Plugin 'octol/vim-cpp-enhanced-highlight'
@@ -164,7 +165,7 @@ hi CursorLineNr ctermbg=012 ctermfg=187 guibg=NONE guifg=NONE
 "hi Pmenu ctermbg=cyan ctermfg=darkgrey guibg=darkblue guifg=white
 
 " comment color
-hi Comment ctermfg=61
+hi Comment ctermfg=95
 
 
 " Key map
