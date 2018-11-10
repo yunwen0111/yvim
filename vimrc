@@ -116,6 +116,7 @@ let g:UltiSnipsExpandTrigger="<tab>"
 
 " Nerdcommenter
 let g:mapleader = ","
+let g:NERDSpaceDelims=1
 
 " YCM
 let g:ycm_confirm_extra_conf=0
