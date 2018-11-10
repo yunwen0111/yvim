@@ -93,6 +93,7 @@ let g:tagbar_sort = 0
 let NERDTreeWinPos = "right"
 
 " Golang
+let g:go_version_warning = 0
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_fields = 1
