@@ -22,12 +22,16 @@
     Plugin 'hukl/Smyck-Color-Scheme'
     Plugin 'octol/vim-cpp-enhanced-highlight'
     Plugin 'vim-scripts/TaskList.vim'
-    Plugin 'klen/python-mode'
+    Plugin 'python-mode/python-mode', { 'branch': 'develop' }
     Plugin 'tpope/vim-markdown'
     Plugin 'xolox/vim-misc'  " for vim-lua-ftplugin
     Plugin 'xolox/vim-lua-ftplugin'
-    Plugin 'Lokaltog/vim-powerline'
-    Plugin 'kien/ctrlp.vim'
+    Plugin 'vim-airline/vim-airline'
+    Plugin 'vim-airline/vim-airline-themes'
+    "Plugin 'Lokaltog/vim-powerline'
+    Plugin 'bling/vim-bufferline'
+    Plugin 'ctrlpvim/ctrlp.vim'
+    Plugin 'tacahiroy/ctrlp-funky'  " Search functions
     Plugin 'SirVer/ultisnips'
     Plugin 'honza/vim-snippets'
     "Plugin 'jiangmiao/auto-pairs'
@@ -38,6 +42,7 @@
     Plugin 'rdnetto/YCM-Generator'
     Plugin 'terryma/vim-multiple-cursors'  " Sublime text style multiple selections
     Plugin 'vim-scripts/DrawIt'
+    Plugin 'matchit.zip'
 
     " All of your Plugins must be added before the following line
     call vundle#end()            " required
