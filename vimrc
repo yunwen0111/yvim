@@ -208,6 +208,7 @@ nmap fmm :set foldmethod=marker<cr>
 
 
 " Ctags
+set tags=tags;
 nmap <c-]> g<c-]>
 
 
