@@ -96,6 +96,7 @@ let g:tagbar_sort = 0
 
 " Nerdtree
 let NERDTreeWinPos = "right"
+let g:NERDTreeNodeDelimiter = "\u00a0"
 
 " Golang
 let g:go_version_warning = 0
