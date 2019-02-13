@@ -42,3 +42,10 @@ termcapinfo screen 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
 ```
 
 And make sure `TERM=screen`.
+
+
+### powerline/fonts setting:
+
+See [Readme](https://github.com/powerline/fonts).
+
+iTerm2 needs extra setting.

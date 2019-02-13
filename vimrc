@@ -29,7 +29,7 @@
     Plugin 'vim-airline/vim-airline'
     Plugin 'vim-airline/vim-airline-themes'
     "Plugin 'Lokaltog/vim-powerline'
-    Plugin 'bling/vim-bufferline'
+    Plugin 'powerline/fonts'
     Plugin 'ctrlpvim/ctrlp.vim'
     Plugin 'tacahiroy/ctrlp-funky'  " Search functions
     Plugin 'SirVer/ultisnips'
@@ -97,6 +97,9 @@ let g:tagbar_sort = 0
 " Nerdtree
 let NERDTreeWinPos = "right"
 let g:NERDTreeNodeDelimiter = "\u00a0"
+
+" AirLine
+let g:airline_powerline_fonts = 1
 
 " Golang
 let g:go_version_warning = 0
@@ -174,6 +177,13 @@ hi CursorLineNr ctermbg=012 ctermfg=187 guibg=NONE guifg=NONE
 
 " comment color
 hi Comment ctermfg=95
+
+" minibufexpl
+" hi MBENormal              ctermfg=darkgrey
+" hi MBEChanged             ctermfg=red
+" hi MBEVisibleNormal       ctermfg=blue
+" hi MBEVisibleChanged      ctermfg=cyan
+" hi MBEVisibleActiveNormal ctermfg=cyan
 
 
 " Key map
